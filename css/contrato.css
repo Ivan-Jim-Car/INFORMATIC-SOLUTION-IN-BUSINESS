@@ -1,0 +1,43 @@
+*{
+    /* Eliminar predeterminados */
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+
+}
+
+.pdfview {
+    /* Centrado */
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    margin: auto;
+    display: block;
+    /* Tamaño */
+    width: 850px;
+    height: 80vh;
+    /* Mejorar aspecto */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.title {
+    /* Estilos de título h1 */
+    position: absolute;
+    left: 900px;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}

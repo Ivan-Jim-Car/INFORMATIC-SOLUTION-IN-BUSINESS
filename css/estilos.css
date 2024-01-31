@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    background-size: cover;
+}
+.box{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    top: -55px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(70deg);
+    animation: rotar 90s linear infinite;
+   
+}
+
+.box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 150%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)* 70deg)) translateZ(400px);
+    
+
+}
+.box span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+    border-radius: 10%;
+   
+   
+
+}
+.img1{
+    position: absolute;
+    top: 250px;
+    left: 65px;
+    text-align: center;
+    color: white ;
+}
+
+.img2{
+    position: absolute;
+    top: 250px;
+    left: 40px;
+    text-align: center;
+    color: white ;
+}
+.img3{
+    position: absolute;
+    top: 250px;
+    left: 60px;
+    text-align: center;
+    color: white ;
+}
+.img4{
+    position: absolute;
+    top: 250px;
+    left: 45px;
+    text-align: center;
+    color: white ;
+}
+.img5{
+    position: absolute;
+    top: 250px;
+    left: 40px;
+    text-align: center;
+    color: white ;
+}
+
+
+
+@keyframes rotar{
+    from{
+        transform: rotatey(180deg);
+    }
+    to{
+        transform: rotateY(-180deg);
+    }
+}
+.botton{
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    bottom: -94px;
+    background: #000;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 10px 10px #fff;
+    transform: rotateX(90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.botton::before{
+    content: "";
+    width: 16rem;
+    height: 16rem;
+    position: absolute;
+    bottom: 5rem;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 10px 10px #000;
+    
+}

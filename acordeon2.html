@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mas sobre nosotros</title>
+</head>
+><style>
+    *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Relaway', sans-serif;
+}
+.acordeon{
+	background: #45413d;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    top: 100px;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 14px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    transition: all 300ms ease;
+   
+}
+.active, .acordeon:hover{
+    background-color: #2e2e2e;
+}
+.panel{
+    width: 60%;
+    position: relative;
+    left: 20%;
+    top: 93px;
+    padding: 0px 20px;
+	font-size: 17px;
+    display: none;
+	background: #fff;
+	border-radius: 30px;
+    overflow: hidden;    
+}
+h1{
+    color: white;
+    text-align: center;
+}
+.head {
+    position: absolute;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.title {
+ 
+    position: absolute;
+    text-align: center;
+    left: 42%;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+</style>
+<body background="imagenes/fondoregistro1.jpg">
+    <div class="head"><h2 class="title">MAS SOBRE NOSOTROS</h2></div>
+    <div class="contenido">
+    <button class="acordeon"><h2>MISIÓN</h2></button>
+    <div class="panel">
+    <p><br>Somos una empresa que proporciona soluciones tecnológicas innovadoras y personalizadas para 
+        impulsar el éxito de nuestros clientes en el ámbito de los negocios.<br> Nos comprometemos a 
+        brindarles herramientas y servicios de vanguardia que optimicen sus procesos, mejoren la eficiencia 
+        operativa y fomenten la toma de decisiones informada.<br><br>
+
+    </p>
+</div>
+<button class="acordeon"><h2>VISIÓN</h2></button>
+<div class="panel">
+    <p><br>Ser líderes reconocidos a nivel nacional en el campo de las soluciones tecnológicas.<br> Nos 
+        esforzamos por transformar la forma en que las empresas operan y se conectan con sus clientes, 
+        brindando soluciones innovadoras que impulsen la eficiencia, la competitividad y el crecimiento 
+        sostenible.<br> Buscamos ser pioneros en la aplicación de tecnologías disruptivas, como inteligencia 
+        artificial, análisis de datos avanzados y automatización, para ofrecer soluciones empresariales de 
+        vanguardia.<br><br>
+        
+    </p>
+    </div>
+    <button class="acordeon"><h2>VALORES</h2></button>
+<div class="panel">
+    <p> <br>Nos esforzamos por crear un impacto positivo en la sociedad al empoderar a las empresas con herramientas tecnológicas que mejoren la eficiencia, impulsen la innovación y generen un cambio 
+        significativo en sus industrias.<br><br>
+        <br><b>Diversidad:</b> Valorar y respetar a los clientes y las culturas sin importar sus diferencias.<br><br>
+        <br><b>Interacciones significativas:</b>Crear relaciones de confianza y colaboración con los empleados, los clientes y la comunidad.<br><br>
+        <br><b>Impacto:</b> Generar un cambio positivo en el mundo con la innovación y la creatividad.</br><br>
+        <br><b>Desarrollo personal:</b> Fomentar el aprendizaje, el crecimiento y la superación de los desafíos tanto como los clientes y los empleados.<br><br>
+        <br><b>Compromiso con los clientes:</b> Ofrecer soluciones de calidad que satisfagan sus necesidades y expectativas a largo plazo.<br><br>
+        <br><b>Integridad:</b> Actuar con honestidad, transparencia y responsabilidad.<br><br>
+        <br><b>Perseguir la excelencia:</b> Buscar la mejora continua y la excelencia en todo lo que se hace.<br><br>
+        <br><b>Trabajo en equipo:</b> Trabajar de forma cooperativa, solidaria y respetuosa con los demás en todo ámbito que se requiera.<br><br>
+        <br><b>Innovación:</b> Crear soluciones nuevas y creativas para problemas existentes.<br><br>
+        <br><b>Crecimiento:</b> Aumentar la presencia de la empresa en el mercado y expandir su alcance.<br><br>
+        <br><b>Calidad:</b> Ofrecer productos y servicios de alta calidad que satisfagan las necesidades del cliente.<br><br>
+        <br><b>Seguridad:</b> Proteger los datos y la privacidad del cliente.<br><br>
+        <br><b>Eficiencia:</b> Optimizar los procesos internos para mejorar la productividad y reducir costos.<br><br>
+    
+    </p>
+    </div>
+    <button class="acordeon"><h2>OBJETIVOS</h2></button>
+<div class="panel">
+    <p><br>Nuestro objetivo es convertirnos en un socio estratégico confiable, ayudando a las empresas a 
+        adaptarse y prosperar en un entorno empresarial cada vez más digital. Trabajamos incansablemente 
+        para ofrecer soluciones de negocios tecnológicos integradas, confiables y escalables, para impulsar
+        la productividad y el crecimiento sostenible de nuestros clientes, buscamos ser el socio preferido de 
+        las empresas en su viaje digital.<br><br>
+    
+    </p>
+</div>
+    </div>
+    <script>
+        let elementosAcordeon = document.getElementsByClassName("acordeon "); 
+        for(let i = 0; i< elementosAcordeon.length; i++){
+            elementosAcordeon[i].addEventListener("click",function(){
+            this.classList.toggle("active");
+            let panel = this.nextElementSibling;
+            if(panel.style.display == "block"){
+                panel.style.display = "none";
+            }else{
+                panel.style.display = "block";
+            }
+            });
+        }              
+    </script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+    height: 60vh !important;
+   
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 73px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: -104px;
+
+}
+
+.logo a {
+    position: relative;
+    left: -112px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #2e2c2c;
+}
+.navbar h3{
+    font-family: 'calibri';
+	color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header {
+    height: 60vh !important;
+    background: url(imagenes/fondo.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.title {
+    position: absolute;
+    top: 750px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+.titulo{
+    position: absolute;
+    top: 800px;
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+.logo1{
+    position: fixed;
+    top: 29%;
+    left: 38%;
+    margin: auto;
+    
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 100px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #8E7610;
+    color: #fff;
+    text-decoration: none;
+    background: #8E7610;
+}
+
+.btn:hover {
+    background: none;
+    
+}
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0 10px;
+}
+
+
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau {
+    height: 60vh !important;
+    background: url(imagenes/fondo.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.box-container {
+    position: absolute;
+    top: 800px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.box-container .box {
+    height: 11rem;
+    width: 17rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    margin: 2rem;
+       
+}
+
+.box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #8E7610;
+    font-size: 2rem;
+    margin: 1rem 0;
+   
+
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    top: 100px;
+    color: #acacac;
+
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+
+.price {
+    background: url(imagenes/fondo\ pagina.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+
+.contact {
+    padding-top: 20px;
+    background: #171717;
+    padding-bottom: 0;
+    background: url(imagenes/fondo.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+.contact h2{
+position: absolute;
+top: 1100px;
+text-align: center;
+}
+#mapa{
+    
+position: absolute;
+top: 1170px;
+border-radius: 70px;
+    
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .sau {
+        height: 100vh;
+    }
+
+    .navbar {
+        display: none;
+    }
+   
+    
+}

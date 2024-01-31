@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAS SOBRE NOSOTROS</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body background="imagenes/fondo.jpg">
+    <div class="box">
+<span style="--i:1;"><img src="imagenes/ima1.jpeg" alt=""><h5 class="img1">Roberto Vega González<br>Líder de proyecto</h5></span>
+<span style="--i:2;"><img src="imagenes/ima2.jpeg" alt=""><h5 class="img2">Josmar Ivan Jiménez Carmona<br>Programador Web: A<br>Instalador de red: B</h5></span>
+<span style="--i:3;"><img src="imagenes/ima3.jpeg" alt=""><h5 class="img3">Miguel Ángel Cordero<br> Instalador de red: C<br></h5></span>
+<span style="--i:4;"><img src="imagenes/ima4.jpeg" alt=""><h5 class="img4">José Antonio García Carbajal<br>Programador web: B<br>Instalador de red: A</h5></span>
+<span style="--i:5;"><img src="imagenes/ima5.jpeg" alt=""><h5 class="img5">Manuel Alejandro Garcia Priego<br>Analista<br>Encargado de relaciones públicas</h5></span>
+<div class="botton"></div>
+</div>
+    <script type="text/javascript">
+        let box = document.querySelector('.box');
+        window.onmousemove = function(e){
+            let x = e.clientX/8;
+            box.style.transform = "perspective(1000px) rotateY(" + x + "deg)";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+#Logo{
+ position: absolute;
+ left: 40%;
+  transition: 1.0s;
+    object-fit: cover;
+}
+#contactos{
+ Left: 75%;
+ position: absolute;
+ top: 30px;
+}
+#descripcion{
+    top: 30%;
+    position: absolute;
+    text-align: center;
+    left: 350px;
+}
+#niño{
+    position: absolute;
+    width: 300px;
+    top: 550px;
+    left: 100px;
+    transition: 1.0s;
+    object-fit: cover;
+}
+img:hover{
+    transform: scale(1.2);
+}
+#sentado{
+    position: absolute;
+    width: 180px;
+    top: 400px;
+    left: 1100px;
+    transition: 1.0s;
+    object-fit: cover;
+}
+#posando{
+ position: absolute;
+    width: 180px;
+    top: 400px;
+    left: 650px;
+    top: 470;
+    transition: 1.0s;
+    object-fit: cover;
+}
+#hr1{
+    top: 1000px;
+    position: absolute;
+    left: 350px;
+}
+h1{
+    position: absolute;
+    top: 1020px;
+    left: 40%;
+    color: white;
+    text-align: none;
+}
+#hr2{
+    top: 1100px;
+    position: absolute;
+    left: 350px;
+}
+#ubi1{
+    top: 1130px;
+    position: absolute;
+}
+#envios{
+    position: absolute;
+    top: 1650px;
+    left: 400px;
+}
+#mapa{
+    position: absolute;
+    top: 1150px;
+    left: 400px;
+}
